@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Form</title>
+
+    <style>
+        #sub:hover{
+            background-color: #D988B9;
+        }
+        #border{
+            margin-left: auto ;
+            margin-right: auto;
+            border-radius: 30px;
+            width: 50%;
+            background-color: lightcoral;
+        }
+        #name{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+
+        }
+
+       #btm:hover{
+        background-color: #D988B9;
+
+        }
+
+        label{
+            font-family:cursive;
+        }
+        
+    </style>
+
+
+</head>
+<body bgcolor="#F4E0B9">
+    <form action="msg.html" >
+        <fieldset id="border" >
+            <legend id="name">Information</legend>
+
+            <label for="sal">Salutation</label>
+            <select name="sal" id="sal">
+            <option value="---None----">--None--</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+        </select>
+        <br><br>
+
+        <label for="fname">FirstName</label>
+        <input type="text" required name="fname" id="fname" placeholder="abcd" pattern="[A-Z a-z]{3,7}" >
+        <br><br>
+        <label for="mname">MiddleName</label>
+        <input type="text" name="mname" id="mname"placeholder="efg">
+        <br><br>
+        <label for="lname">LastName</label>
+        <input type="text" name="name" id="lname"placeholder="math" required>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="abcd@gmail.com">
+        <br><br>
+
+        <label for="number">PhoneNumber</label>
+            &nbsp;
+           <input type="tel" name="number" id="number"  pattern="[6-9]{1}[0-9]{9}" required>
+           <br><br>
+        <label for="dob">DOB</label>
+        <input type="date" name="dob" id="dob" >
+        <br><br>
+
+    </fieldset>
+    </form>
+
+    <form action="msg.html">
+        <fieldset id="border">
+            <legend id="name">Educational details</legend>
+            <label for="dept" ><strong>Dept</strong></label>
+            <br>
+
+            <input type="radio" id="cs" name="Dept">
+            <label for="cs">Cs</label>
+           
+            <input type="radio" id="ec" name="Dept">
+            <label for="ec">EC</label>
+            
+
+            <input type="radio" id="ise" name="Dept">
+            <label for="ise">Ise</label>
+            
+
+            <input type="radio" id="cv" name="Dept">
+            <label for="cv">Civil</label>
+            
+            <br><br>
+
+            <label for="yog"><b>YOG</b></label><br>
+            <input list="year" name="yog" id="yog">
+            <datalist id="year">
+                <option value="2020">
+                    <option value="2021">
+                        <option value="2022">
+                        <option value="2023">
+
+
+            </datalist>
+            <br><br>
+
+            <label for=""><b>Skills</b></label><br>
+
+            <input type="checkbox" name="skills" id="java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" name="skills" id="html">
+            <label for="html">HTML</label><br>
+            
+            <input type="checkbox" name="skills" id="css">
+            <label for="Css">CSS</label>
+            <br><br>
+
+
+        </fieldset>
+
+
+    </form>
+    <br><br>
+    <center><input id="btm" type="submit" id="sub"> </center>
+</body>
+</html>
